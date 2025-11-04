@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Order Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+ }
+ .card {
+    background-color: rgba(255, 255, 255, 0.85);
+    margin: 40px auto;
+    width: 80%;
+    max-width: 900px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+ }
+ .form-container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 600px;
+ }
+ .form-container h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 10px;
+ }
+ .form-container p {
+       text-align: center;
+       color: #666;
+       margin-bottom: 30px;
+ }
+ .form-container h4 {
+       color: #666;
+       margin-bottom: 30px;
+ }
+.input-group {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+ }
+ .input-field {
+      flex: 1;
+ }
+ .input-field label {
+      display: block;
+      margin-bottom: 5px;
+ }
+ .input-field input, .input-field select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+ }
+ .checkbox-group {
+      margin-bottom: 20px;
+ }
+ .checkbox-group h3 {
+      color: #333;
+      margin-bottom: 10px;
+ }
+.checkbox-options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+ }
+ .checkbox-item {
+      display: flex;
+      align-items: center;
+ }
+.checkbox-item input[type="checkbox"] {
+      margin-right: 10px;
+ }
+ .checkbox-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+  }
+ .terms-checkbox {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+ }
+ .terms-checkbox input[type="checkbox"] {
+      margin-right: 10px;
+ }
+ .register-button {
+      width: 100%;
+      padding: 15px;
+      background-color: blue;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+ }
+ .register-button:hover {
+      background-color: red;
+ }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h1>Order Form</h1>
+    
+   <form action="#" method="post">
+    <div class="input-field">
+      <label for="name">Name</label>
+      <input type="text" id="Name" name="name" placeholder="name" required="">
+    </div><br>
+    
+    <div class="input-group">
+      <div class="input-field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="abcdefgh2@gmail.com"
+        required="" >
+      </div>
+      <div class="input-field">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="000000000" required="">
+      </div>
+    </div>
+    
+    <h2>Order Details</h2>
+        <div class="input-group">
+            <div class="input-field">
+                <label for="product">Product</label>
+                <select id="product" name="product">
+                    <option  value="">Select a product</option>
+                    <option value="baju">Baju</option>
+                    <option value="kemeja">Kemeja</option>
+                    <option value="celana">Celana</option>
+                </select>
+            </div>
+            
+            <div class="input-field" style="max-width:50px">
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" name="quantity" value="1" min="1">
+            </div>
+        </div>
+        
+        <div class="checkbox-group">
+          <label>
+            <b>Size</b>
+          </label><br><br>
+          <div class="checkbox-options">
+            <div class="checkbox-item">
+              <input type="checkbox" id="small" name="small" value="small">
+              <label for="small">Small</label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="medium" name="medium" value="medium">
+              <label for="medium">Medium</label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="large" name="large" value="large">
+              <label for="large">Large</label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="xl" name="xl" value="xl">
+              <label for="xl">XL</label>
+            </div>
+          </div><br>
+            
+         <div class="checkbox-group">
+          <label><b>Color</b></label><br><br>
+           <div class="checkbox-options">
+            <div class="checkbox-item">
+              <input type="checkbox" id="red" name="red" value="red">
+              <label for="red">Red</label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="blue" name="blue" value="blue">
+              <label for="blue">Blue</label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="green" name="green" value="green">
+              <label for="green">Green</label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="black" name="black" value="black">
+              <label for="black">Black</label>
+            </div>
+          </div>
+        </div>
+    
+    <h3>Additional Comments</h3>
+    <div style="flex:1; display:flex; flex-direction:column;">
+      <textarea id="" name="" rows="6" placeholder="Enter any additional comments or instructions" ></textarea>
+    </div>
+    
+    <h2>Payment Details</h2>
+      <div class="input-field">
+         <label for="product">
+          <b>Payment Method</b></label>
+           <select id="method" name="method">
+             <option  value="">
+               Select a payment method</option>
+             <option value="e_wallet">
+               E_Wallet</option>
+             <option value="cod">
+               COD</option>
+             <option value="bank_bsi">Bank BSI</option>
+           </select>
+       </div><br>
+       
+       <div class="terms-checkbox">
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I accept the terms and conditions</label>
+      </div>
+      <button type="submit"
+       class="register-button">
+       Registar Now!</button>
+   </form>
+  </div>
+</body>
+</html>
