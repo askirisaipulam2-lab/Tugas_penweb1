@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Formulir Pendaftaran Event</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display:flex ;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+ }
+ .card {
+    background-color: rgba(255, 255, 255, 0.85);
+    margin: 40px auto;
+    width: 80%;
+    max-width: 900px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+ }
+ .form-container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 600px;
+ }
+ .form-container h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 10px;
+ }
+ .form-container p {
+       text-align: center;
+       color: #666;
+       margin-bottom: 30px;
+ }
+.input-group {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+ }
+ .input-field {
+      flex: 1;
+ }
+ .input-field label {
+      display: block;
+      margin-bottom: 5px;
+ }
+ .input-field input, .input-field select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+ }
+ .checkbox-group {
+      margin-bottom: 20px;
+ }
+ .checkbox-group h3 {
+      color: #333;
+      margin-bottom: 10px;
+ }
+.checkbox-options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+ }
+ .checkbox-item {
+      display: flex;
+      align-items: center;
+ }
+.checkbox-item input[type="checkbox"] {
+      margin-right: 10px;
+ }
+ .terms-checkbox {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+ }
+ .terms-checkbox input[type="checkbox"] {
+      margin-right: 10px;
+ }
+ .register-button {
+      width: 100%;
+      padding: 15px;
+      background-color: blue;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+ }
+ .register-button:hover {
+      background-color: red;
+ }
+  </style>
+</head>
+<body>
+  
+  <div class="form-container">
+    <h1>Event Registration Form</h1>
+    <p>Please Fill Out The Form Below To Registar For The Event </p>
+    
+    <form action="#" method="post">
+      <div class="input-group">
+        <div  class="input-field">
+          <label for="first-name">
+           <strong>First Name</strong>
+          </label>
+          <input type="text" id="first-name" name="first-name" placeholder="Askiri Saipul Alam" required="">
+          </div>
+          
+          <div class="input-field">
+            <label for="last-name">
+             <strong>Last Name</strong>
+            </label>
+            <input type="text" id="last-name" name="last-name" placeholder="Askiri" required="">
+        </div>
+      </div>
+      
+        <div class="input-field">
+          <label for="email">
+           <strong>Email Address</strong>
+          </label>
+          <input type="email" id="email" name="email" placeholder="Askirisaipulam2@gmail.com" 
+          required="">
+        </div><br>
+        
+        <div class="input-field">
+          <label for="phone">
+           <strong>Phone Number</strong>
+          </label>
+          <input type="number" id="Phone" name="Phone" placeholder="+62-857-1511-8015" required="">
+        </div><br>
+        
+        <div class="input-group">
+          <div class="input-field">
+            <label for="country">
+             <strong>Country</strong>
+            </label>
+             <select id="country" name="country">
+              <option value="">
+                Select Country</option>
+              <option value="ID">
+                Indonesia</option>
+              <option value="US">
+                Amerika Serikat</option>
+              <option value="RS">
+                Rusia</option>
+            </select>
+          </div>
+          
+          <div class="input-field">
+            <label for="date">
+              <strong>Date Of Birth</strong>
+            </label>
+            <input type="date" id="dob" name="dob" placeholder="">
+          </div>
+        </div>
+        
+     <div class="checkbox-group">
+       <h4>T-Shirt Size</h4>
+        <div class="checkbox-options">
+          <div class="checkbox-item">
+            <input type="checkbox" id="size-small" name="t-shirt-size" value="small">
+            <label for="size-small">Small</label>
+          </div>
+        
+          <div class="checkbox-item">
+            <input type="checkbox" id="size-medium" name="t-shirt-size" value="medium">
+             <label for="size-medium">
+              Medium</label>
+          </div>
+        
+          <div class="checkbox-item">
+            <input type="checkbox" id="size-large" name="t-shirt-size" value="large">
+              <label for="size-large">
+                Large</label>
+          </div>
+        
+          <div class="checkbox-item">
+            <input type="checkbox" id="size-xl" name="t-shirt-size" value="extra-large">
+             <label for="size-xl">
+             Extra Large</label>
+           </div>
+      </div>
+    </div>
+    
+    <h3>Emergency Contact Information</h3>
+    <div class="input-field">
+      <label for="">
+        <strong>Emergency Contact Name</strong>
+      </label>
+      <input type="text" id="Contact-name" name="name" placeholder="Nathan" required="">
+    </div><br>
+    
+    <div class="input-field">
+          <label for="phone">
+           <strong>Emergency Contact Phone Number</strong>
+          </label>
+          <input type="number" id="Phone" name="Phone" placeholder="+62-857-1511-8015" required="">
+        </div><br>
+    
+    <div class="terms-checkbox">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the terms and conditions of the event</label>
+     </div>
+        
+    <button type="submit" 
+    class="register-button">Register Now!</button>
+    
+    </form>
+  </div>
+</body>
+</html>
