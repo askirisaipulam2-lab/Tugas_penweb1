@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Volunteer Form</title>
+ <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+ }
+ .card {
+    background-color: rgba(255, 255, 255, 0.85);
+    margin: 40px auto;
+    width: 80%;
+    max-width: 900px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+ }
+ .form-container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 600px;
+ }
+ .form-container h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 10px;
+ }
+ .form-container p {
+       text-align: center;
+       color: #666;
+       margin-bottom: 30px;
+ }
+ .form-container h4 {
+       color: #666;
+       margin-bottom: 30px;
+ }
+.input-group {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+ }
+ .input-field {
+      flex: 1;
+ }
+ .input-field label {
+      display: block;
+      margin-bottom: 5px;
+ }
+ .input-field input, .input-field select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+ }
+ .checkbox-group {
+      margin-bottom: 20px;
+ }
+ .checkbox-group h3 {
+      color: #333;
+      margin-bottom: 10px;
+ }
+.checkbox-options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+ }
+ .checkbox-item {
+      display: flex;
+      align-items: center;
+ }
+.checkbox-item input[type="checkbox"] {
+      margin-right: 10px;
+ }
+ .checkbox-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+  }
+ .terms-checkbox {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+ }
+ .terms-checkbox input[type="checkbox"] {
+      margin-right: 10px;
+ }
+ .register-button {
+      width: 100%;
+      padding: 15px;
+      background-color: blue;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+ }
+ .register-button:hover {
+      background-color: red;
+ }
+  </style>
+</head>
+<body>
+ 
+ <div class="form-container">
+   <h1>Volunteer Sign Up Form</h1>
+   <p>Please fiil out the following form to become a volunteer</p>
+ 
+ <form action="#" method="post">
+   <div class="input-group">
+     <div class="input-field">
+       <label for="first-name">First Name</label>
+       <input type="text" id="first-name" name="first-name" placeholder="Askiri Saipul Alam" required="">
+     </div>
+     
+     <div class="input-field">
+       <label for="last-name">Last Name</label>
+       <input type="text" id="Last-name" name="last-name" placeholder="Askiri" required="">
+     </div>
+   </div>
+   
+   <div class="input-field">
+    <label for="email">
+     <strong>Email Address</strong>
+     </label>
+       <input type="email" id="email" name="email" placeholder="Askirisaipulam2@gmail.com" 
+          required="">
+   </div><br>
+   
+   <div class="input-field">
+     <label for="phone">
+     <strong>Phone Number</strong>
+       </label>
+         <input type="number" id="Phone" name="Phone" placeholder="+62-857-1511-8015" required="">
+   </div><br>
+   
+   <div class="input-field">
+     <label for="">
+      <strong>Date Of Birth</strong>
+       </label>
+         <input type="date" id="dob" name="dob" placeholder="MM/DD/YYYY">
+   </div><br>
+   
+  <div class="input-field">
+    <label for="role">
+     <b>Preferred Volunteer Role</b>
+      </label>
+      <select id="role" name="role">
+       <option value="">Select your preferred volunteer role</option>
+       <option value="mahasiswa">
+       Mahasiswa</option>
+       <option value="dosen">
+         Dosen</option>
+       <option value="bigbos">
+         Big Bos</option>
+       </select>
+   </div>
+   
+   <h2>Availability</h2>
+   <div class="checkbox-group">
+    <h3>Days Available</h3>
+    <h4>Selech the days you are available to volunteer</h4>
+    <div class="checkbox-list">
+      <div class="checkbox-item">
+        <input type="checkbox" id="day-monday" name="days-available" value="monday">
+        <label for="day-monday">Monday</label>
+      </div>
+      
+      <div class="checkbox-item">
+        <input type="checkbox" id="day-tuesday" name="days-available" value="tuesday">
+        <label form="day-tuesday">Tuesday</label>
+      </div>
+      
+      <div class="checkbox-item">
+        <input type="checkbox" id="day-wednesday" name="days-available" value="wednesday">
+        <label for="day-wednesday">
+          Wednesda</label>
+      </div>
+      
+      <div class="checkbox-item">
+        <input type="checkbox" id="day-thursday" name="days-available" value="thursday">
+        <label for="day-thursday">Thursday</label>
+      </div>
+      
+      <div class="checkbox-item">
+        <input type="checkbox" id="day-friday" name="days-available" value="friday">
+        <label for="day-friday">Friday</label>
+      </div>
+      
+      <div class="checkbox-item">
+        <input type="checkbox" id="day-saturday" name="days-available" value="saturday">
+        <label for="day-saturday">Saturday</label>
+      </div>
+      
+      <div class="checkbox-item">
+        <input type="checkbox" id="day-sunday" name="days-available" value="sunday">
+        <label form="day-sunday">Sunday</label>
+      </div>
+    </div>
+   </div>
+   
+   <div class="input-group">
+     <div class="input-field">
+       <label for="start-time">
+         Available Start Time
+       </label>
+       <input type="time" id="start-time" name="start-time" placeholder="09:00 AM" required="">
+     </div>
+     <div class="input-field">
+       <label for="end-time">
+         Available End Time
+       </label>
+       <input type="time" id="end-time" name="end-time" placeholder="17.00PM" required="">
+     </div>
+   </div>
+   
+   <h2>Skills And Interests</h2>
+    <div style="flex:1; display:flex; flex-direction:column;">
+     <label for="whyJoin">Skills And Experience</label><br>
+       <textarea id="whyJoin" name="whyJoin" rows="6" placeholder="Enter your skills and experience." ></textarea>
+       <label style="color:#555; font-size:13px">Please describe your skills and experience, if any, that would be relevant to the volunteer role.</label>
+    </div>
+    
+    <h2>Interests</h2>
+    <div class="checkbox-group">
+      <h4>select your interests</h4>
+      <div class="checkbox-options">
+        <div class="checkbox-item">
+          <input type="checkbox" id="animals" name="animals" value="animals">
+          <label for="animals">Animals</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="children" name="children" value="children">
+          <label for="children">Children</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="erderly" name="erderly" value="erderly">
+          <label for="erderly">Erderly</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="environment" name="environment"
+          value="environment">
+          <label for="environment">Environment</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="health" name="health" value="health",sd
+          <label for="health">Health</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="homelessness" name="homelessness" value="homelessness">
+          <label for="homelessness">
+            Homelessness</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="poverty" name="poverty" value="poverty">
+          <label for="poverty">Poverty</label>
+      </div>
+    </div><br>
+    
+    <div class="terms-checkbox">
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions of the volunteer program</label>
+      </div>
+      <button type="submit"
+       class="register-button">
+       Registar Now!</button>
+ </form>
+ </div>
+</body>
+</html
